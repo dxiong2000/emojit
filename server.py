@@ -15,4 +15,5 @@ def convertText():
     newText = tagWords(text)
     return {"data": newText}
 
-app.run()
+if __name__ == '__main__':
+    app.run()
