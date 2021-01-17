@@ -1,5 +1,5 @@
 from flask import Flask, request
-from scrape import getEmojiList
+from replace import tagWords
 
 app = Flask(__name__)
 
@@ -10,6 +10,6 @@ def hello_world():
 # /convertText
 @app.route('/convertText', methods=['POST'])
 def convertText():
-    # emojiList = getEmojiList(searchStr)
+    newText = tagWords(text)
     
 app.run()

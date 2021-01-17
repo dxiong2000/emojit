@@ -1,6 +1,7 @@
 from textblob import TextBlob
 import random
 from scrape import getEmojiList
+
 def tagWords(inputString):
     string = TextBlob(inputString)
     sets = set(['NN', 'NNS', 'PRP', 'VBD'])
