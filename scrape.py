@@ -24,7 +24,10 @@ def getEmojiList(searchStr):
         return {}
     
     for e in elements:
-        emojiNames.append(e.contents[1].strip(' '))
+        if len(e.contents) > 1:
+            emojiNames.append(e.contents[1].strip(' '))
+        else:
+            emojiNames.append(e.contents[0].strip(' '))
     
     emojiDict = dict(zip(emojiNames, emojis))
     
