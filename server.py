@@ -1,5 +1,4 @@
 from flask import Flask, request
-from bs4 import BeautifulSoup
 from scrape import getEmojiList
 
 app = Flask(__name__)
