@@ -4,7 +4,7 @@ from scrape import getEmojiList
 
 def tagWords(inputString):
     string = TextBlob(inputString)
-    sets = set(['NN', 'NNS', 'PRP', 'VBD'])
+    sets = set(['NN', 'NNS', 'PRP', 'VBD', 'JJ'])
     newString = ""
     for word in string.tags:
         if(word[1] in sets and len(word[0]) > 1):
