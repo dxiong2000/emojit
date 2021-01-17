@@ -1,4 +1,4 @@
-# emojify
+# EmojIt!
 
 Install database:
 npm install -g json-server
