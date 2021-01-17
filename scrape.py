@@ -14,7 +14,7 @@ def getEmojiList(searchStr):
         emoji = e.contents[0].strip(' ')
         if len(emoji) > 1:
             emoji = emoji[0]
-        emojis.append(f'U+{ord(emoji):X}')
+        emojis.append(emoji)
     
     emojiNames = []
     elements = result.find_all('a')
