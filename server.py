@@ -12,3 +12,4 @@ def hello_world():
 def getEmoji():
     searchStr = request.args.get('search')
     
+app.run()
