@@ -16,7 +16,7 @@ def tagWords(inputString):
                     newString += word[0] + emote + emote + " "
                 elif(num<=9):
                     newString += word[0] + emote + emote + emote + " "
-                else: #num==4
+                else: #num==10
                     newString += emote + emote + word[0] + emote + emote + " "
             else:
                 newString += word[0] + " "
