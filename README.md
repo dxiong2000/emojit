@@ -1,5 +1,5 @@
 # EmojIt!
-## 🤙 Spice up your texts with emojis! 🎉
+## 🎉 Spice up your texts with emojis! 🎉
 
 Built with:
 - BeautifulSoup
