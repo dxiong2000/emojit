@@ -1,5 +1,6 @@
 from flask import Flask, request
 from bs4 import BeautifulSoup
+from scrape import getEmojiList
 
 app = Flask(__name__)
 
@@ -7,9 +8,9 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, World!'
 
-# /getEmoji?search=SearchStr
-@app.route('/getEmoji')
-def getEmoji():
-    searchStr = request.args.get('search')
+# /convertText
+@app.route('/convertText', methods=['POST'])
+def convertText():
+    # emojiList = getEmojiList(searchStr)
     
 app.run()
