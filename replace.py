@@ -1,8 +1,6 @@
 from textblob import TextBlob
 import random
 from scrape import getEmojiList
-import nltk
-nltk.download()
 
 def tagWords(inputString):
     string = TextBlob(inputString)
