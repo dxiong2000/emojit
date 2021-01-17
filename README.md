@@ -1,7 +1,8 @@
-# emojify
+# EmojIt!
+## 🎉 Spice up your texts with emojis! 🎉
 
-Install database:
-npm install -g json-server
+Built with:
+- BeautifulSoup
+- Textblob
+- ReactJS
 
-Run database server:
-json-server --watch db.json
