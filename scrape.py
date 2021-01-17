@@ -18,11 +18,15 @@ def getEmojiList(searchStr):
     
     emojiNames = []
     elements = result.find_all('a')
+    
+    # no results
+    if elements[0].contents[0] == 'random emoji':
+        return {}
+    
     for e in elements:
         emojiNames.append(e.contents[1].strip(' '))
     
     emojiDict = dict(zip(emojiNames, emojis))
     
-    print(emojiDict)
+    #print(emojiDict)
     return emojiDict
-    
