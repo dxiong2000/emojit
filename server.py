@@ -10,6 +10,9 @@ def hello_world():
 # /convertText
 @app.route('/convertText', methods=['POST'])
 def convertText():
+    data = request.get_json(force=True)
+    text = data['input']
     newText = tagWords(text)
-    
+    return {"data": newText}
+
 app.run()
